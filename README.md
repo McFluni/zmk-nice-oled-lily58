@@ -1,3 +1,4 @@
+# This is fork from [nice!oled](https://github.com/mctechnology17/zmk-nice-oled) for Lily58
 # nice!oled
 
 ![Banner](./assets/banner.JPG)
@@ -33,6 +34,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
 +   - name: mctechnology17
 +     url-base: https://github.com/mctechnology17
   projects:
@@ -54,11 +57,14 @@ manifest:
 ---
 include:
   - board: nice_nano_v2
--   shield: corne_left
-+   shield: corne_left nice_oled
+-   shield: lily58_left 
++   shield: lily58_left nice_oled
+    snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
--   shield: corne_right
-+   shield: corne_right nice_oled
+-   shield: lily58_right 
++   shield: lily58_right nice_oled
+  - board: nice_nano_v2
+    shield: settings_reset
 ```
 
 3. Build the firmware, flash it to your keyboard, and enjoy!
